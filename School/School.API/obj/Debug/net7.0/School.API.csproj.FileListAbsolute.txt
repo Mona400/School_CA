@@ -179,11 +179,13 @@ G:\CV_Project\L_CA\School\School.API\bin\Debug\net7.0\FluentValidation.Dependenc
 G:\CV_Project\L_CA\School\School.API\bin\Debug\net7.0\Microsoft.Extensions.Localization.Abstractions.dll
 G:\CV_Project\L_CA\School\School.API\bin\Debug\net7.0\Ar\School.Core.resources.dll
 G:\CV_Project\L_CA\School\School.API\bin\Debug\net7.0\En\School.Core.resources.dll
+D:\Toutural\CV_Project\L_CA\School\School.API\obj\Debug\net7.0\School.API.AssemblyInfoInputs.cache
+D:\Toutural\CV_Project\L_CA\School\School.API\bin\Debug\net7.0\School.API.exe
+D:\Toutural\CV_Project\L_CA\School\School.API\bin\Debug\net7.0\School.API.runtimeconfig.json
+D:\Toutural\CV_Project\L_CA\School\School.API\bin\Debug\net7.0\runtimes\unix\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
 D:\Toutural\CV_Project\L_CA\School\School.API\bin\Debug\net7.0\appsettings.Development.json
 D:\Toutural\CV_Project\L_CA\School\School.API\bin\Debug\net7.0\appsettings.json
-D:\Toutural\CV_Project\L_CA\School\School.API\bin\Debug\net7.0\School.API.exe
 D:\Toutural\CV_Project\L_CA\School\School.API\bin\Debug\net7.0\School.API.deps.json
-D:\Toutural\CV_Project\L_CA\School\School.API\bin\Debug\net7.0\School.API.runtimeconfig.json
 D:\Toutural\CV_Project\L_CA\School\School.API\bin\Debug\net7.0\School.API.dll
 D:\Toutural\CV_Project\L_CA\School\School.API\bin\Debug\net7.0\School.API.pdb
 D:\Toutural\CV_Project\L_CA\School\School.API\bin\Debug\net7.0\AutoMapper.dll
@@ -195,6 +197,7 @@ D:\Toutural\CV_Project\L_CA\School\School.API\bin\Debug\net7.0\FluentValidation.
 D:\Toutural\CV_Project\L_CA\School\School.API\bin\Debug\net7.0\Humanizer.dll
 D:\Toutural\CV_Project\L_CA\School\School.API\bin\Debug\net7.0\MediatR.dll
 D:\Toutural\CV_Project\L_CA\School\School.API\bin\Debug\net7.0\MediatR.Contracts.dll
+D:\Toutural\CV_Project\L_CA\School\School.API\bin\Debug\net7.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
 D:\Toutural\CV_Project\L_CA\School\School.API\bin\Debug\net7.0\Microsoft.AspNetCore.OpenApi.dll
 D:\Toutural\CV_Project\L_CA\School\School.API\bin\Debug\net7.0\Microsoft.Bcl.AsyncInterfaces.dll
 D:\Toutural\CV_Project\L_CA\School\School.API\bin\Debug\net7.0\Microsoft.Data.SqlClient.dll
@@ -229,7 +232,6 @@ D:\Toutural\CV_Project\L_CA\School\School.API\bin\Debug\net7.0\System.Runtime.Ca
 D:\Toutural\CV_Project\L_CA\School\School.API\bin\Debug\net7.0\System.Security.Cryptography.ProtectedData.dll
 D:\Toutural\CV_Project\L_CA\School\School.API\bin\Debug\net7.0\System.Security.Permissions.dll
 D:\Toutural\CV_Project\L_CA\School\School.API\bin\Debug\net7.0\System.Windows.Extensions.dll
-D:\Toutural\CV_Project\L_CA\School\School.API\bin\Debug\net7.0\runtimes\unix\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
 D:\Toutural\CV_Project\L_CA\School\School.API\bin\Debug\net7.0\runtimes\win\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
 D:\Toutural\CV_Project\L_CA\School\School.API\bin\Debug\net7.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
 D:\Toutural\CV_Project\L_CA\School\School.API\bin\Debug\net7.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
@@ -253,7 +255,6 @@ D:\Toutural\CV_Project\L_CA\School\School.API\bin\Debug\net7.0\Ar\School.Core.re
 D:\Toutural\CV_Project\L_CA\School\School.API\bin\Debug\net7.0\En\School.Core.resources.dll
 D:\Toutural\CV_Project\L_CA\School\School.API\obj\Debug\net7.0\School.API.csproj.AssemblyReference.cache
 D:\Toutural\CV_Project\L_CA\School\School.API\obj\Debug\net7.0\School.API.GeneratedMSBuildEditorConfig.editorconfig
-D:\Toutural\CV_Project\L_CA\School\School.API\obj\Debug\net7.0\School.API.AssemblyInfoInputs.cache
 D:\Toutural\CV_Project\L_CA\School\School.API\obj\Debug\net7.0\School.API.AssemblyInfo.cs
 D:\Toutural\CV_Project\L_CA\School\School.API\obj\Debug\net7.0\School.API.csproj.CoreCompileInputs.cache
 D:\Toutural\CV_Project\L_CA\School\School.API\obj\Debug\net7.0\School.API.MvcApplicationPartsAssemblyInfo.cs
