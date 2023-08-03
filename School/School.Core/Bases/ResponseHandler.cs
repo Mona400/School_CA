@@ -72,6 +72,8 @@ namespace School.Core.Bases
             };
         }
 
+        
+
         public Response<T> Created<T>(T entity, object meta = null)
         {
             return new Response<T>()
