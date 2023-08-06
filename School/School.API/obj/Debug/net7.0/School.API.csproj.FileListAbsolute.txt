@@ -274,3 +274,8 @@ D:\Toutural\CV_Project\L_CA\School\School.API\obj\Debug\net7.0\School.API.genrun
 D:\Toutural\CV_Project\L_CA\School\School.API\obj\Debug\net7.0\ref\School.API.dll
 D:\Toutural\CV_Project\L_CA\School\School.API\bin\Debug\net7.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
 D:\Toutural\CV_Project\L_CA\School\School.API\obj\Debug\net7.0\School.API.MvcApplicationPartsAssemblyInfo.cs
+D:\Toutural\CV_Project\L_CA\School\School.API\bin\Debug\net7.0\Microsoft.AspNetCore.JsonPatch.dll
+D:\Toutural\CV_Project\L_CA\School\School.API\bin\Debug\net7.0\Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll
+D:\Toutural\CV_Project\L_CA\School\School.API\bin\Debug\net7.0\Newtonsoft.Json.dll
+D:\Toutural\CV_Project\L_CA\School\School.API\bin\Debug\net7.0\Newtonsoft.Json.Bson.dll
+D:\Toutural\CV_Project\L_CA\School\School.API\bin\Debug\net7.0\Swashbuckle.AspNetCore.Newtonsoft.dll
