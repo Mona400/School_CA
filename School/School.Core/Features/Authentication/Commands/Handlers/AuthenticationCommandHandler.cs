@@ -11,7 +11,9 @@ using School.Service.Abstracts;
 namespace School.Core.Features.Authentication.Commands.Handlers
 {
     public class AuthenticationCommandHandler : ResponseHandler,
-        IRequestHandler<SignInCommand, Response<JwtAuthResult>>
+        IRequestHandler<SignInCommand, Response<JwtAuthResult>>,
+        IRequestHandler<RefreshTokenCommand, Response<JwtAuthResult>>
+
 
     {
         private readonly IStringLocalizer _stringLocalizer;
@@ -44,6 +46,11 @@ namespace School.Core.Features.Authentication.Commands.Handlers
             var accessToken = await _authenticationService.GetJWTToken(user);
             //return token
             return Success(accessToken);
+        }
+
+        public Task<Response<JwtAuthResult>> Handle(RefreshTokenCommand request, CancellationToken cancellationToken)
+        {
+            throw new NotImplementedException();
         }
     }
 }
