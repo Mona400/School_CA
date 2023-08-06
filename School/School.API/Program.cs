@@ -72,6 +72,9 @@ namespace School.API
             app.UseRequestLocalization(options.Value);
             #endregion
 
+
+
+
             // Configure the HTTP request pipeline.
             if (app.Environment.IsDevelopment())
             {
@@ -81,6 +84,7 @@ namespace School.API
 
             app.UseMiddleware<ErrorHandlerMiddleWare>();
             app.UseHttpsRedirection();
+            //app.UseCors(CQRS)
             app.UseAuthentication();
             app.UseAuthorization();
 

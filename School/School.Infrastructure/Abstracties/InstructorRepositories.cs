@@ -1,10 +1,9 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using School.Data.Entities;
-using School.Infrastructure.Abstracties;
 using School.Infrastructure.Data;
 using School.Infrastructure.InfrastructureBases;
 
-namespace School.Infrastructure.Repositories
+namespace School.Infrastructure.Abstracties
 {
     public class InstructorRepositories : GenericRepositoryAsync<Instructor>, IInstructorRepositories
     {
