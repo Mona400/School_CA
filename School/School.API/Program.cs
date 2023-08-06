@@ -35,7 +35,7 @@ namespace School.API
             builder.Services.AddInfrastructureDependencies()
                             .AddServicesDependencies()
                             .AddCoreDependencies()
-                            .AddServiceRegistration()
+                            .AddServiceRegistration(builder.Configuration)
                             ;
 
             #endregion
@@ -81,7 +81,7 @@ namespace School.API
 
             app.UseMiddleware<ErrorHandlerMiddleWare>();
             app.UseHttpsRedirection();
-
+            app.UseAuthentication();
             app.UseAuthorization();
 
 

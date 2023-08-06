@@ -5,7 +5,7 @@ using School.Data.AppMetaData;
 
 namespace School.API.Controllers
 {
-    [Route("api/[controller]")]
+
     [ApiController]
     public class DepartmentController : AppControllerBase
     {

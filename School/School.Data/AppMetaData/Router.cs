@@ -27,6 +27,30 @@
 
 
         }
+        public static class ApplicationUserRouting
+        {
+            public const string Prefix = Rule + "User";
+            public const string List = Prefix + "/List";
+            public const string GetByID = Prefix + SingleRoute;
+            public const string Create = Prefix + "/Create";
+            public const string Edit = Prefix + "/Edit";
+            public const string Delete = Prefix + "/Delete";
+            public const string Paginated = Prefix + "/Paginated";
+            public const string ChangePassword = Prefix + "/ChangePassword";
+
+        }
+        public static class AuthenticationRouting
+        {
+            public const string Prefix = Rule + "Authentication";
+            public const string List = Prefix + "/List";
+            public const string GetByID = Prefix + SingleRoute;
+            public const string SignIn = Prefix + "/SignIn";
+            public const string Edit = Prefix + "/Edit";
+            public const string Delete = Prefix + "/Delete";
+            public const string Paginated = Prefix + "/Paginated";
+            public const string ChangePassword = Prefix + "/ChangePassword";
+
+        }
 
 
     }

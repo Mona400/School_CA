@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "G32ggiCCMJ9cxu3lDg5Vmm0Qa607XbogMBDd3sovquh9rS03H5yJRelhycNQKjGKXo0lJ5tmUO1K8853AkryPQ==",
+  "dgSpecHash": "+6Z1XtdDqhOMgUP/OicoHx7U41PgpAg7SNtLlaWF+tBKb5F7V5s7kkvFqVRbMV2t2wQ3HiRlby7Z7nnuQ77ijA==",
   "success": true,
   "projectFilePath": "D:\\Toutural\\CV_Project\\L_CA\\School\\School.API\\School.API.csproj",
   "expectedPackageFiles": [
@@ -17,6 +17,7 @@
     "C:\\Users\\ig\\.nuget\\packages\\microsoft.aspnetcore.authentication.abstractions\\2.1.1\\microsoft.aspnetcore.authentication.abstractions.2.1.1.nupkg.sha512",
     "C:\\Users\\ig\\.nuget\\packages\\microsoft.aspnetcore.authentication.cookies\\2.1.1\\microsoft.aspnetcore.authentication.cookies.2.1.1.nupkg.sha512",
     "C:\\Users\\ig\\.nuget\\packages\\microsoft.aspnetcore.authentication.core\\2.1.1\\microsoft.aspnetcore.authentication.core.2.1.1.nupkg.sha512",
+    "C:\\Users\\ig\\.nuget\\packages\\microsoft.aspnetcore.authentication.jwtbearer\\7.0.9\\microsoft.aspnetcore.authentication.jwtbearer.7.0.9.nupkg.sha512",
     "C:\\Users\\ig\\.nuget\\packages\\microsoft.aspnetcore.cryptography.internal\\7.0.0\\microsoft.aspnetcore.cryptography.internal.7.0.0.nupkg.sha512",
     "C:\\Users\\ig\\.nuget\\packages\\microsoft.aspnetcore.cryptography.keyderivation\\7.0.0\\microsoft.aspnetcore.cryptography.keyderivation.7.0.0.nupkg.sha512",
     "C:\\Users\\ig\\.nuget\\packages\\microsoft.aspnetcore.dataprotection\\2.1.1\\microsoft.aspnetcore.dataprotection.2.1.1.nupkg.sha512",

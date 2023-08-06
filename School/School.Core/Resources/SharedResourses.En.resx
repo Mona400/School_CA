@@ -120,14 +120,26 @@
   <data name="BadRequest" xml:space="preserve">
     <value>Request Can't be Understand</value>
   </data>
+  <data name="ChangePasswordFailed" xml:space="preserve">
+    <value>Change Password Operation Failed</value>
+  </data>
   <data name="Created" xml:space="preserve">
     <value>Created Successfully</value>
   </data>
   <data name="Deleted" xml:space="preserve">
     <value>Deleted Successfully</value>
   </data>
+  <data name="DeleteFailed" xml:space="preserve">
+    <value>Delete Operation Failed</value>
+  </data>
   <data name="DepartmentId" xml:space="preserve">
     <value>Department Id</value>
+  </data>
+  <data name="EmailIsExist" xml:space="preserve">
+    <value>Email Is Already Exist</value>
+  </data>
+  <data name="FaildToAddUser" xml:space="preserve">
+    <value>Faild To Add User</value>
   </data>
   <data name="IsExist" xml:space="preserve">
     <value>Is Already Exist</value>
@@ -147,6 +159,15 @@
   <data name="NotFound" xml:space="preserve">
     <value>Object Is Not Found</value>
   </data>
+  <data name="Password" xml:space="preserve">
+    <value>Password</value>
+  </data>
+  <data name="PasswordNotCorrect" xml:space="preserve">
+    <value>Password Not Correct</value>
+  </data>
+  <data name="PasswordNotEqualTheConfirmPassword" xml:space="preserve">
+    <value>Password Not Equal The ConfirmPassword</value>
+  </data>
   <data name="Required" xml:space="preserve">
     <value>This Field Is Required</value>
   </data>
@@ -161,5 +182,17 @@
   </data>
   <data name="Updated" xml:space="preserve">
     <value>Updated Successfully</value>
+  </data>
+  <data name="UpdateFailed" xml:space="preserve">
+    <value>Update Operation Failed</value>
+  </data>
+  <data name="UserName" xml:space="preserve">
+    <value>User Name</value>
+  </data>
+  <data name="UserNameIsExist" xml:space="preserve">
+    <value>UserName Is Already Exist</value>
+  </data>
+  <data name="UserNameIsNotExist" xml:space="preserve">
+    <value>User Name Is Not Exist</value>
   </data>
 </root>

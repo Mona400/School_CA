@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using School.API.Base;
 using School.Core.Features.Students.Commands.Models;
 using School.Core.Features.Students.Queries.Models;
@@ -8,6 +9,7 @@ namespace School.API.Controllers
 {
 
     [ApiController]
+    [Authorize]
     public class StudentController : AppControllerBase
     {
 
@@ -18,6 +20,7 @@ namespace School.API.Controllers
             return Ok(result);
         }
         [HttpGet(Router.StudentRouting.Paginated)]
+        [AllowAnonymous]
         public async Task<IActionResult> Paginated([FromQuery] GetStudentPaginatedListQuery query)
         {
             var result = await Mediator.Send(query);
@@ -45,9 +48,9 @@ namespace School.API.Controllers
         }
 
         [HttpDelete(Router.StudentRouting.Delete)]
-        public async Task<IActionResult> Delete([FromForm] DeleteStudentCommand deleteStudentCommand)
+        public async Task<IActionResult> Delete([FromRoute] int id)
         {
-            var result = await Mediator.Send(deleteStudentCommand);
+            var result = await Mediator.Send(new DeleteStudentCommand());
             return NewResult(result);
         }
     }
