@@ -180,7 +180,7 @@ namespace School.Infrastructure.Migrations
                         .IsUnique()
                         .HasFilter("[InsManager] IS NOT NULL");
 
-                    b.ToTable("Departments");
+                    b.ToTable("Departments", (string)null);
                 });
 
             modelBuilder.Entity("School.Data.Entities.DepartmentSubject", b =>
@@ -195,7 +195,7 @@ namespace School.Infrastructure.Migrations
 
                     b.HasIndex("DID");
 
-                    b.ToTable("DepartmentSubjects");
+                    b.ToTable("DepartmentSubjects", (string)null);
                 });
 
             modelBuilder.Entity("School.Data.Entities.Identity.User", b =>
@@ -312,7 +312,7 @@ namespace School.Infrastructure.Migrations
 
                     b.HasIndex("UserId");
 
-                    b.ToTable("UserRefreshToken");
+                    b.ToTable("UserRefreshToken", (string)null);
                 });
 
             modelBuilder.Entity("School.Data.Entities.Ins_Subject", b =>
@@ -327,7 +327,7 @@ namespace School.Infrastructure.Migrations
 
                     b.HasIndex("InsId");
 
-                    b.ToTable("Ins_Subject");
+                    b.ToTable("Ins_Subject", (string)null);
                 });
 
             modelBuilder.Entity("School.Data.Entities.Instructor", b =>
@@ -365,7 +365,7 @@ namespace School.Infrastructure.Migrations
 
                     b.HasIndex("SupervisorId");
 
-                    b.ToTable("Instructor");
+                    b.ToTable("Instructor", (string)null);
                 });
 
             modelBuilder.Entity("School.Data.Entities.Student", b =>
@@ -396,7 +396,7 @@ namespace School.Infrastructure.Migrations
 
                     b.HasIndex("DID");
 
-                    b.ToTable("Students");
+                    b.ToTable("Students", (string)null);
                 });
 
             modelBuilder.Entity("School.Data.Entities.StudentSubject", b =>
@@ -414,7 +414,7 @@ namespace School.Infrastructure.Migrations
 
                     b.HasIndex("StudID");
 
-                    b.ToTable("StudentSubjects");
+                    b.ToTable("StudentSubjects", (string)null);
                 });
 
             modelBuilder.Entity("School.Data.Entities.Subject", b =>
@@ -438,7 +438,7 @@ namespace School.Infrastructure.Migrations
 
                     b.HasKey("SubID");
 
-                    b.ToTable("Subjects");
+                    b.ToTable("Subjects", (string)null);
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<int>", b =>

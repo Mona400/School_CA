@@ -49,6 +49,8 @@
             public const string Delete = Prefix + "/Delete";
             public const string Paginated = Prefix + "/Paginated";
             public const string ChangePassword = Prefix + "/ChangePassword";
+            public const string RefreshToken = Prefix + "/RefreshToken";
+            public const string ValidateToken = Prefix + "/ValidateToken";
 
         }
 
