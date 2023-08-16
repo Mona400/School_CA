@@ -14,6 +14,8 @@ namespace School.Core.Features.Authentication.Commands.Validators
         public SignInValidator(IStudentServices studentServices, IStringLocalizer<SharedResourses> localizer, IDepartmentServices departmentServices)
         {
             _Localizer = localizer;
+            _studentServices = studentServices;
+            _departmentServices = departmentServices;
             ApplyValidationRules();
             ApplyCustomValdationRules();
         }

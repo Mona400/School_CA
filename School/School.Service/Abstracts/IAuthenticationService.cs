@@ -1,13 +1,17 @@
 ﻿using School.Data.Entities.Identity;
 using School.Data.Helpers;
+using System.IdentityModel.Tokens.Jwt;
 
 namespace School.Service.Abstracts
 {
     public interface IAuthenticationService
     {
         Task<JwtAuthResult> GetJWTToken(User user);
-        Task<JwtAuthResult> GetRefreshToken(string AccessToken, string RefreshToken);
-        public Task<string> validateToken(string AccessToken);
+        JwtSecurityToken ReadJwtToken(string accessToken);
+        Task<(string, DateTime?)> validateDetails(JwtSecurityToken jwtToken, string AccessToken, string RefreshToken);
+
+        Task<JwtAuthResult> GetRefreshToken(User user, JwtSecurityToken jwtToken, DateTime? ExpiryDate, string refreshToken);
+        Task<string> validateToken(string AccessToken);
 
 
     }

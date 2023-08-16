@@ -23,6 +23,7 @@ namespace School.Core.MiddleWare
             }
             catch (Exception error)
             {
+                await Console.Out.WriteLineAsync(error.Message);
                 var response = context.Response;
                 response.ContentType = "application/json";
                 var responseModel = new Response<string>() { Successed = false, Message = error?.Message };

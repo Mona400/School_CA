@@ -34,7 +34,7 @@ namespace School.Core.Features.Authentication.Queries.Handlers
             {
                 return Success(result);
             }
-            return BadRequest<string>("Expired");
+            return Unauthorized<string>(_stringLocalizer[SharedResoursesKeys.TokenIsExpired]);
         }
     }
 }

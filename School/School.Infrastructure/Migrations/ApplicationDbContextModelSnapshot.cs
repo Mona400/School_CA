@@ -180,7 +180,7 @@ namespace School.Infrastructure.Migrations
                         .IsUnique()
                         .HasFilter("[InsManager] IS NOT NULL");
 
-                    b.ToTable("Departments", (string)null);
+                    b.ToTable("Departments");
                 });
 
             modelBuilder.Entity("School.Data.Entities.DepartmentSubject", b =>
@@ -195,7 +195,7 @@ namespace School.Infrastructure.Migrations
 
                     b.HasIndex("DID");
 
-                    b.ToTable("DepartmentSubjects", (string)null);
+                    b.ToTable("DepartmentSubjects");
                 });
 
             modelBuilder.Entity("School.Data.Entities.Identity.User", b =>
@@ -290,10 +290,10 @@ namespace School.Infrastructure.Migrations
                     b.Property<DateTime>("ExpiryDate")
                         .HasColumnType("datetime2");
 
-                    b.Property<bool>("IsUsed")
+                    b.Property<bool>("IsRevoked")
                         .HasColumnType("bit");
 
-                    b.Property<bool>("IsrRevoked")
+                    b.Property<bool>("IsUsed")
                         .HasColumnType("bit");
 
                     b.Property<string>("JwtId")
@@ -312,7 +312,7 @@ namespace School.Infrastructure.Migrations
 
                     b.HasIndex("UserId");
 
-                    b.ToTable("UserRefreshToken", (string)null);
+                    b.ToTable("UserRefreshToken");
                 });
 
             modelBuilder.Entity("School.Data.Entities.Ins_Subject", b =>
@@ -327,7 +327,7 @@ namespace School.Infrastructure.Migrations
 
                     b.HasIndex("InsId");
 
-                    b.ToTable("Ins_Subject", (string)null);
+                    b.ToTable("Ins_Subject");
                 });
 
             modelBuilder.Entity("School.Data.Entities.Instructor", b =>
@@ -365,7 +365,7 @@ namespace School.Infrastructure.Migrations
 
                     b.HasIndex("SupervisorId");
 
-                    b.ToTable("Instructor", (string)null);
+                    b.ToTable("Instructor");
                 });
 
             modelBuilder.Entity("School.Data.Entities.Student", b =>
@@ -396,7 +396,7 @@ namespace School.Infrastructure.Migrations
 
                     b.HasIndex("DID");
 
-                    b.ToTable("Students", (string)null);
+                    b.ToTable("Students");
                 });
 
             modelBuilder.Entity("School.Data.Entities.StudentSubject", b =>
@@ -414,7 +414,7 @@ namespace School.Infrastructure.Migrations
 
                     b.HasIndex("StudID");
 
-                    b.ToTable("StudentSubjects", (string)null);
+                    b.ToTable("StudentSubjects");
                 });
 
             modelBuilder.Entity("School.Data.Entities.Subject", b =>
@@ -438,7 +438,7 @@ namespace School.Infrastructure.Migrations
 
                     b.HasKey("SubID");
 
-                    b.ToTable("Subjects", (string)null);
+                    b.ToTable("Subjects");
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<int>", b =>

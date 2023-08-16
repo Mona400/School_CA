@@ -34,13 +34,13 @@ namespace School.Core.Bases
                 Meta = meta
             };
         }
-        public Response<T> Unauthorized<T>()
+        public Response<T> Unauthorized<T>(string Message = null)
         {
             return new Response<T>()
             {
                 statusCode = System.Net.HttpStatusCode.Unauthorized,
                 Successed = true,
-                Message = _stringLocalizer[SharedResoursesKeys.UnAuthorized]
+                Message = Message == null ? _stringLocalizer[SharedResoursesKeys.UnAuthorized] : Message
             };
         }
         public Response<T> BadRequest<T>(string Message = null)
@@ -72,7 +72,7 @@ namespace School.Core.Bases
             };
         }
 
-        
+
 
         public Response<T> Created<T>(T entity, object meta = null)
         {

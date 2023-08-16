@@ -47,11 +47,58 @@ namespace School.Core.Features.Authentication.Commands.Handlers
             //return token
             return Success(accessToken);
         }
-
         public async Task<Response<JwtAuthResult>> Handle(RefreshTokenCommand request, CancellationToken cancellationToken)
         {
-            var result = await _authenticationService.GetRefreshToken(request.RefreshToken, request.AccessToken);
+            var jwtToken = _authenticationService.ReadJwtToken(request.AccessToken);
+            var userIdAndExpireDate = await _authenticationService.validateDetails(jwtToken, request.AccessToken, request.RefreshToken);
+
+            var (status, expiryDate) = userIdAndExpireDate;
+
+            switch (status)
+            {
+                case "AlgorithmIsWrong":
+                    return Unauthorized<JwtAuthResult>(_stringLocalizer[SharedResoursesKeys.AlgorithmIsWrong]);
+                case "TokenIsNotExpired":
+                    return Unauthorized<JwtAuthResult>(_stringLocalizer[SharedResoursesKeys.TokenIsNotExpired]);
+                case "RefreshTokenIsNotFound":
+                    return Unauthorized<JwtAuthResult>(_stringLocalizer[SharedResoursesKeys.RefreshTokenIsNotFound]);
+                case "RefreshTokenIsExpired":
+                    return Unauthorized<JwtAuthResult>(_stringLocalizer[SharedResoursesKeys.RefreshTokenIsExpired]);
+            }
+
+            var userId = userIdAndExpireDate.Item1;
+            var user = await _userManager.FindByIdAsync(userId);
+            if (user == null)
+            {
+                return NotFound<JwtAuthResult>();
+            }
+
+            var result = await _authenticationService.GetRefreshToken(user, jwtToken, expiryDate, request.RefreshToken);
             return Success(result);
         }
+
+        //public async Task<Response<JwtAuthResult>> Handle(RefreshTokenCommand request, CancellationToken cancellationToken)
+        //{
+        //    var jwtToken = _authenticationService.ReadJwtToken(request.AccessToken);
+        //    var userIdAndExpireDate = await _authenticationService.validateDetails(jwtToken, request.AccessToken, request.RefreshToken);
+
+        //    switch (userIdAndExpireDate.ToString())
+        //    {
+        //        case ("AlgorithmIsWrong"): return Unauthorized<JwtAuthResult>(_stringLocalizer[SharedResoursesKeys.AlgorithmIsWrong]);
+        //        case ("TokenIsNotExpired"): return Unauthorized<JwtAuthResult>(_stringLocalizer[SharedResoursesKeys.TokenIsNotExpired]);
+        //        case ("RefreshTokenIsNotFound"): return Unauthorized<JwtAuthResult>(_stringLocalizer[SharedResoursesKeys.RefreshTokenIsNotFound]);
+        //        case ("RefreshTokenIsExpired"): return Unauthorized<JwtAuthResult>(_stringLocalizer[SharedResoursesKeys.RefreshTokenIsExpired]);
+        //    }
+        //    var (userId, expiryDate) = userIdAndExpireDate;
+        //    var user = await _userManager.FindByIdAsync(userId);
+        //    if (user == null)
+        //    {
+        //        return NotFound<JwtAuthResult>();
+        //    }
+
+
+        //    var result = await _authenticationService.GetRefreshToken(user, jwtToken, expiryDate, request.RefreshToken);
+        //    return Success(result);
+        //}
     }
 }
