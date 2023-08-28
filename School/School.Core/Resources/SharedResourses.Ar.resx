@@ -117,6 +117,9 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="AddFaild" xml:space="preserve">
+    <value>حدث خطا في الاضافه</value>
+  </data>
   <data name="AlgorithmIsWrong" xml:space="preserve">
     <value>هناك خطا في الخوارزميه المستخدمه في التشفير</value>
   </data>
@@ -179,6 +182,12 @@
   </data>
   <data name="Required" xml:space="preserve">
     <value>هذا الحقل مطلوب</value>
+  </data>
+  <data name="RoleIsUsed" xml:space="preserve">
+    <value>هذه الصلاحيه مستخدمه بالفعل لا يمكن الحذف</value>
+  </data>
+  <data name="RoleNotExist" xml:space="preserve">
+    <value>هذه الصلاحيه ليست موجوده</value>
   </data>
   <data name="Success" xml:space="preserve">
     <value>تم االعملية بنجاح</value>

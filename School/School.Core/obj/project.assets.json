@@ -4962,11 +4962,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Toutural\\CV_Project\\L_CA\\School\\School.Core\\School.Core.csproj",
+      "projectUniqueName": "D:\\A_Old_Material\\CV_Project\\L_CA\\School\\School.Core\\School.Core.csproj",
       "projectName": "School.Core",
-      "projectPath": "D:\\Toutural\\CV_Project\\L_CA\\School\\School.Core\\School.Core.csproj",
+      "projectPath": "D:\\A_Old_Material\\CV_Project\\L_CA\\School\\School.Core\\School.Core.csproj",
       "packagesPath": "C:\\Users\\ig\\.nuget\\packages\\",
-      "outputPath": "D:\\Toutural\\CV_Project\\L_CA\\School\\School.Core\\obj\\",
+      "outputPath": "D:\\A_Old_Material\\CV_Project\\L_CA\\School\\School.Core\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\ig\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -4983,14 +4983,14 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "projectReferences": {
-            "D:\\Toutural\\CV_Project\\L_CA\\School\\School.Data\\School.Data.csproj": {
-              "projectPath": "D:\\Toutural\\CV_Project\\L_CA\\School\\School.Data\\School.Data.csproj"
+            "D:\\A_Old_Material\\CV_Project\\L_CA\\School\\School.Data\\School.Data.csproj": {
+              "projectPath": "D:\\A_Old_Material\\CV_Project\\L_CA\\School\\School.Data\\School.Data.csproj"
             },
-            "D:\\Toutural\\CV_Project\\L_CA\\School\\School.Infrastructure\\School.Infrastructure.csproj": {
-              "projectPath": "D:\\Toutural\\CV_Project\\L_CA\\School\\School.Infrastructure\\School.Infrastructure.csproj"
+            "D:\\A_Old_Material\\CV_Project\\L_CA\\School\\School.Infrastructure\\School.Infrastructure.csproj": {
+              "projectPath": "D:\\A_Old_Material\\CV_Project\\L_CA\\School\\School.Infrastructure\\School.Infrastructure.csproj"
             },
-            "D:\\Toutural\\CV_Project\\L_CA\\School\\School.Service\\School.Service.csproj": {
-              "projectPath": "D:\\Toutural\\CV_Project\\L_CA\\School\\School.Service\\School.Service.csproj"
+            "D:\\A_Old_Material\\CV_Project\\L_CA\\School\\School.Service\\School.Service.csproj": {
+              "projectPath": "D:\\A_Old_Material\\CV_Project\\L_CA\\School\\School.Service\\School.Service.csproj"
             }
           }
         }

@@ -1,11 +1,14 @@
 
+using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Localization;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Options;
 using School.Core;
 using School.Core.MiddleWare;
+using School.Data.Entities.Identity;
 using School.Infrastructure;
 using School.Infrastructure.Data;
+using School.Infrastructure.Seeder;
 using School.Service;
 using System.Globalization;
 
@@ -66,12 +69,22 @@ namespace School.API
             #endregion
 
             var app = builder.Build();
+            using (var scope = app.Services.CreateScope())
+            {
+                var userManager = scope.ServiceProvider.GetRequiredService<UserManager<User>>();
+                var roleManager = scope.ServiceProvider.GetRequiredService<RoleManager<Role>>();
+
+                RoleSeeder.SeedAsync(roleManager);
+                UserSeeder.SeedAsync(userManager);
+
+
+            }
+
 
             #region Localization Midelware
             var options = app.Services.GetService<IOptions<RequestLocalizationOptions>>();
             app.UseRequestLocalization(options.Value);
             #endregion
-
 
 
 

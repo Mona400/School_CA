@@ -23,6 +23,7 @@
 
   <ItemGroup>
     <Folder Include="Features\Authentication\Commands\Results\" />
+    <Folder Include="Mapping\Roles\Command\" />
   </ItemGroup>
 
 </Project>

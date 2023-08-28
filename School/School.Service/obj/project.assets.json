@@ -4716,11 +4716,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Toutural\\CV_Project\\L_CA\\School\\School.Service\\School.Service.csproj",
+      "projectUniqueName": "D:\\A_Old_Material\\CV_Project\\L_CA\\School\\School.Service\\School.Service.csproj",
       "projectName": "School.Service",
-      "projectPath": "D:\\Toutural\\CV_Project\\L_CA\\School\\School.Service\\School.Service.csproj",
+      "projectPath": "D:\\A_Old_Material\\CV_Project\\L_CA\\School\\School.Service\\School.Service.csproj",
       "packagesPath": "C:\\Users\\ig\\.nuget\\packages\\",
-      "outputPath": "D:\\Toutural\\CV_Project\\L_CA\\School\\School.Service\\obj\\",
+      "outputPath": "D:\\A_Old_Material\\CV_Project\\L_CA\\School\\School.Service\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\ig\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -4737,11 +4737,11 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "projectReferences": {
-            "D:\\Toutural\\CV_Project\\L_CA\\School\\School.Data\\School.Data.csproj": {
-              "projectPath": "D:\\Toutural\\CV_Project\\L_CA\\School\\School.Data\\School.Data.csproj"
+            "D:\\A_Old_Material\\CV_Project\\L_CA\\School\\School.Data\\School.Data.csproj": {
+              "projectPath": "D:\\A_Old_Material\\CV_Project\\L_CA\\School\\School.Data\\School.Data.csproj"
             },
-            "D:\\Toutural\\CV_Project\\L_CA\\School\\School.Infrastructure\\School.Infrastructure.csproj": {
-              "projectPath": "D:\\Toutural\\CV_Project\\L_CA\\School\\School.Infrastructure\\School.Infrastructure.csproj"
+            "D:\\A_Old_Material\\CV_Project\\L_CA\\School\\School.Infrastructure\\School.Infrastructure.csproj": {
+              "projectPath": "D:\\A_Old_Material\\CV_Project\\L_CA\\School\\School.Infrastructure\\School.Infrastructure.csproj"
             }
           }
         }

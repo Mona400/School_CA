@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Toutural\\CV_Project\\L_CA\\School\\School.Data\\School.Data.csproj": {}
+    "D:\\A_Old_Material\\CV_Project\\L_CA\\School\\School.Data\\School.Data.csproj": {}
   },
   "projects": {
-    "D:\\Toutural\\CV_Project\\L_CA\\School\\School.Data\\School.Data.csproj": {
+    "D:\\A_Old_Material\\CV_Project\\L_CA\\School\\School.Data\\School.Data.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Toutural\\CV_Project\\L_CA\\School\\School.Data\\School.Data.csproj",
+        "projectUniqueName": "D:\\A_Old_Material\\CV_Project\\L_CA\\School\\School.Data\\School.Data.csproj",
         "projectName": "School.Data",
-        "projectPath": "D:\\Toutural\\CV_Project\\L_CA\\School\\School.Data\\School.Data.csproj",
+        "projectPath": "D:\\A_Old_Material\\CV_Project\\L_CA\\School\\School.Data\\School.Data.csproj",
         "packagesPath": "C:\\Users\\ig\\.nuget\\packages\\",
-        "outputPath": "D:\\Toutural\\CV_Project\\L_CA\\School\\School.Data\\obj\\",
+        "outputPath": "D:\\A_Old_Material\\CV_Project\\L_CA\\School\\School.Data\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\ig\\AppData\\Roaming\\NuGet\\NuGet.Config",

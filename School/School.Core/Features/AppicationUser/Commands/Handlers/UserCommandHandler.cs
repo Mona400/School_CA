@@ -54,6 +54,13 @@ namespace School.Core.Features.AppicationUser.Commands.Handlers
                 return BadRequest<string>(createResult.Errors.FirstOrDefault().Description);
             }
             //Message
+            var users = await _userManager.Users.ToListAsync();
+
+            await _userManager.AddToRoleAsync(IdentityUser, "User");
+
+
+
+
             //create
             return Created("");
             //success

@@ -179,6 +179,13 @@ G:\CV_Project\L_CA\School\School.API\bin\Debug\net7.0\FluentValidation.Dependenc
 G:\CV_Project\L_CA\School\School.API\bin\Debug\net7.0\Microsoft.Extensions.Localization.Abstractions.dll
 G:\CV_Project\L_CA\School\School.API\bin\Debug\net7.0\Ar\School.Core.resources.dll
 G:\CV_Project\L_CA\School\School.API\bin\Debug\net7.0\En\School.Core.resources.dll
+D:\Toutural\CV_Project\L_CA\School\School.API\obj\Debug\net7.0\School.API.csproj.AssemblyReference.cache
+D:\Toutural\CV_Project\L_CA\School\School.API\obj\Debug\net7.0\School.API.GeneratedMSBuildEditorConfig.editorconfig
+D:\Toutural\CV_Project\L_CA\School\School.API\obj\Debug\net7.0\School.API.AssemblyInfoInputs.cache
+D:\Toutural\CV_Project\L_CA\School\School.API\obj\Debug\net7.0\School.API.AssemblyInfo.cs
+D:\Toutural\CV_Project\L_CA\School\School.API\obj\Debug\net7.0\School.API.csproj.CoreCompileInputs.cache
+D:\Toutural\CV_Project\L_CA\School\School.API\obj\Debug\net7.0\School.API.MvcApplicationPartsAssemblyInfo.cs
+D:\Toutural\CV_Project\L_CA\School\School.API\obj\Debug\net7.0\School.API.MvcApplicationPartsAssemblyInfo.cache
 D:\Toutural\CV_Project\L_CA\School\School.API\bin\Debug\net7.0\appsettings.Development.json
 D:\Toutural\CV_Project\L_CA\School\School.API\bin\Debug\net7.0\appsettings.json
 D:\Toutural\CV_Project\L_CA\School\School.API\bin\Debug\net7.0\School.API.exe
@@ -258,13 +265,6 @@ D:\Toutural\CV_Project\L_CA\School\School.API\bin\Debug\net7.0\School.Infrastruc
 D:\Toutural\CV_Project\L_CA\School\School.API\bin\Debug\net7.0\School.Service.pdb
 D:\Toutural\CV_Project\L_CA\School\School.API\bin\Debug\net7.0\Ar\School.Core.resources.dll
 D:\Toutural\CV_Project\L_CA\School\School.API\bin\Debug\net7.0\En\School.Core.resources.dll
-D:\Toutural\CV_Project\L_CA\School\School.API\obj\Debug\net7.0\School.API.csproj.AssemblyReference.cache
-D:\Toutural\CV_Project\L_CA\School\School.API\obj\Debug\net7.0\School.API.GeneratedMSBuildEditorConfig.editorconfig
-D:\Toutural\CV_Project\L_CA\School\School.API\obj\Debug\net7.0\School.API.AssemblyInfoInputs.cache
-D:\Toutural\CV_Project\L_CA\School\School.API\obj\Debug\net7.0\School.API.AssemblyInfo.cs
-D:\Toutural\CV_Project\L_CA\School\School.API\obj\Debug\net7.0\School.API.csproj.CoreCompileInputs.cache
-D:\Toutural\CV_Project\L_CA\School\School.API\obj\Debug\net7.0\School.API.MvcApplicationPartsAssemblyInfo.cs
-D:\Toutural\CV_Project\L_CA\School\School.API\obj\Debug\net7.0\School.API.MvcApplicationPartsAssemblyInfo.cache
 D:\Toutural\CV_Project\L_CA\School\School.API\obj\Debug\net7.0\staticwebassets\msbuild.School.API.Microsoft.AspNetCore.StaticWebAssets.props
 D:\Toutural\CV_Project\L_CA\School\School.API\obj\Debug\net7.0\staticwebassets\msbuild.build.School.API.props
 D:\Toutural\CV_Project\L_CA\School\School.API\obj\Debug\net7.0\staticwebassets\msbuild.buildMultiTargeting.School.API.props

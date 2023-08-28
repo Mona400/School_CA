@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "sJoahpcA56fJ01QHNzAlAYzaY8K8uP+kvBdX/xXgvVBSDaRJh50icEm2BMC55Ut+FNu6Pw1CaFapgeCt5V6rAw==",
+  "dgSpecHash": "cUjEytT8Uuw6cWI/Zr/bqvgDvwa13OxqOUUYN9mzI+nVb+Ag1kDU8vU2CCdZLQb2CrlZ8Gz7r25ztnr2utXtLg==",
   "success": true,
-  "projectFilePath": "D:\\Toutural\\CV_Project\\L_CA\\School\\School.API\\School.API.csproj",
+  "projectFilePath": "D:\\A_Old_Material\\CV_Project\\L_CA\\School\\School.API\\School.API.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\ig\\.nuget\\packages\\automapper\\12.0.1\\automapper.12.0.1.nupkg.sha512",
     "C:\\Users\\ig\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\12.0.1\\automapper.extensions.microsoft.dependencyinjection.12.0.1.nupkg.sha512",

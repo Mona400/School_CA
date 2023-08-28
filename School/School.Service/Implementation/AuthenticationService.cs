@@ -1,4 +1,5 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.AspNetCore.Identity;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
 using School.Data.Entities.Identity;
 using School.Data.Helpers;
@@ -14,19 +15,20 @@ namespace School.Service.Implementation
     public class AuthenticationService : IAuthenticationService
     {
         private readonly JwtSettings _jwtSettings;
+        private readonly UserManager<User> _userManager;
 
         private readonly IRefreshTokenRepository _refreshTokenRepository;
 
-        public AuthenticationService(JwtSettings jwtSettings, IRefreshTokenRepository refreshTokenRepository)
+        public AuthenticationService(JwtSettings jwtSettings, IRefreshTokenRepository refreshTokenRepository, UserManager<User> userManager)
         {
             _jwtSettings = jwtSettings;
             _refreshTokenRepository = refreshTokenRepository;
-
+            _userManager = userManager;
         }
         public async Task<JwtAuthResult> GetJWTToken(User user)
         {
 
-            var (jwtToken, accessToken) = GenerateJWTToken(user);
+            var (jwtToken, accessToken) = await GenerateJWTToken(user);
             var refreshToken = GetRefreshToken(user.UserName);
             var userRefreshToken = new UserRefreshToken
             {
@@ -72,21 +74,33 @@ namespace School.Service.Implementation
             return Convert.ToBase64String(randomNumber);
 
         }
-        private List<Claim> GetClaims(User user)
+        private List<Claim> GetClaims(User user, List<string> roles)
         {
             var claims = new List<Claim>()
             {
-                new Claim(nameof(UserClaimModel.UserName),user.UserName),
-                new Claim(nameof(UserClaimModel.Email),user.Email),
-                new Claim(nameof(UserClaimModel.PhoneNumber),user.PhoneNumber),
-                new Claim(nameof(UserClaimModel.Id),user.Id.ToString()),
+                new Claim(ClaimTypes.Name,user.UserName),
+                new Claim(ClaimTypes.NameIdentifier,user.UserName),
+                new Claim(ClaimTypes.Email,user.Email),
+                new Claim(nameof(UserClaimModel.Id), user.Id.ToString()),
+                new Claim(nameof(UserClaimModel.PhoneNumber), user.PhoneNumber),
+                new Claim(ClaimTypes.Role, "Admin"),
             };
+            foreach (var role in roles)
+            {
+                claims.Add(new Claim(ClaimTypes.Role, role));
+            }
+            //new Claim(nameof(UserClaimModel.UserName), user.UserName),
+            //    new Claim(nameof(UserClaimModel.Email), user.Email),
+            //    new Claim(nameof(UserClaimModel.PhoneNumber), user.PhoneNumber),
+            //    new Claim(nameof(UserClaimModel.Id), user.Id.ToString()),
+            //    new Claim(nameof(UserClaimModel.Role), "Admin"),
             return claims;
         }
 
-        private (JwtSecurityToken, string) GenerateJWTToken(User user)
+        private async Task<(JwtSecurityToken, string)> GenerateJWTToken(User user)
         {
-            var claims = GetClaims(user);
+            var roles = await _userManager.GetRolesAsync(user);
+            var claims = GetClaims(user, roles.ToList());
             var jwtToken = new JwtSecurityToken(
                 _jwtSettings.Issure,
                 _jwtSettings.Audience,
@@ -102,7 +116,7 @@ namespace School.Service.Implementation
 
             //Generate Refresh Token
 
-            var (jwtSecurityToken, newToken) = GenerateJWTToken(user);
+            var (jwtSecurityToken, newToken) = await GenerateJWTToken(user);
 
             var response = new JwtAuthResult();
             response.AccessToken = newToken;
