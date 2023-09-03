@@ -1,5 +1,5 @@
 ﻿using School.Data.Entities;
-using School.Data.Helpers;
+using School.Data.Enums;
 
 namespace School.Service.Abstracts
 {

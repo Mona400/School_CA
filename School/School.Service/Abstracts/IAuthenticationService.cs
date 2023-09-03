@@ -1,5 +1,5 @@
 ﻿using School.Data.Entities.Identity;
-using School.Data.Helpers;
+using School.Data.Results;
 using System.IdentityModel.Tokens.Jwt;
 
 namespace School.Service.Abstracts

@@ -147,6 +147,15 @@
   <data name="FaildToAddUser" xml:space="preserve">
     <value>Faild To Add User</value>
   </data>
+  <data name="FailedToAddNewClaims" xml:space="preserve">
+    <value>Failed To Add New Claims</value>
+  </data>
+  <data name="FailedToRemmoveOldClaims" xml:space="preserve">
+    <value>Failed To Remmove Old Claims</value>
+  </data>
+  <data name="FailedToUpdateClaims" xml:space="preserve">
+    <value>Failed To Update Claims</value>
+  </data>
   <data name="IsExist" xml:space="preserve">
     <value>Is Already Exist</value>
   </data>
@@ -209,6 +218,9 @@
   </data>
   <data name="UpdateFailed" xml:space="preserve">
     <value>Update Operation Failed</value>
+  </data>
+  <data name="UserIsNotFound" xml:space="preserve">
+    <value>User Is Not Found</value>
   </data>
   <data name="UserName" xml:space="preserve">
     <value>User Name</value>

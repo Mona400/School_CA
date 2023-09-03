@@ -57,12 +57,17 @@
         public static class AuthorizationRouting
         {
             public const string Prefix = Rule + "Authorization";
-            public const string List = Prefix + "Role/List";
-            public const string GetByID = Prefix + "/Role/GetRoleById/{id}";
-            public const string Create = Prefix + "/Role/Create";
-            public const string Edit = Prefix + "/Role/Edit";
-            public const string Delete = Prefix + "/Role/Delete/{id}";
-            public const string Paginated = Prefix + "/Paginated";
+            public const string Roles = Prefix + "Roles";
+            public const string Claims = Prefix + "Claims";
+            public const string List = Roles + "/List";
+            public const string GetByID = Roles + "/GetRoleById/{id}";
+            public const string Create = Roles + "/Create";
+            public const string Edit = Roles + "/Edit";
+            public const string ManageUserRoles = Roles + "/ManageUserRoles/{id}";
+            public const string ManageUserClaims = Claims + "/ManageUserClaims/{id}";
+            public const string Delete = Roles + "/Delete/{id}";
+            public const string UpdateUserClaims = Claims + "/UpdateUserClaims";
+            public const string Paginated = Roles + "/Paginated";
 
         }
 

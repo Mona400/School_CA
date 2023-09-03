@@ -34,3 +34,15 @@ D:\Toutural\CV_Project\L_CA\School\School.Data\obj\Debug\net7.0\School.Data.dll
 D:\Toutural\CV_Project\L_CA\School\School.Data\obj\Debug\net7.0\refint\School.Data.dll
 D:\Toutural\CV_Project\L_CA\School\School.Data\obj\Debug\net7.0\School.Data.pdb
 D:\Toutural\CV_Project\L_CA\School\School.Data\obj\Debug\net7.0\ref\School.Data.dll
+D:\A_Old_Material\CV_Project\L_CA\School\School.Data\bin\Debug\net7.0\School.Data.deps.json
+D:\A_Old_Material\CV_Project\L_CA\School\School.Data\bin\Debug\net7.0\School.Data.dll
+D:\A_Old_Material\CV_Project\L_CA\School\School.Data\bin\Debug\net7.0\School.Data.pdb
+D:\A_Old_Material\CV_Project\L_CA\School\School.Data\obj\Debug\net7.0\School.Data.csproj.AssemblyReference.cache
+D:\A_Old_Material\CV_Project\L_CA\School\School.Data\obj\Debug\net7.0\School.Data.GeneratedMSBuildEditorConfig.editorconfig
+D:\A_Old_Material\CV_Project\L_CA\School\School.Data\obj\Debug\net7.0\School.Data.AssemblyInfoInputs.cache
+D:\A_Old_Material\CV_Project\L_CA\School\School.Data\obj\Debug\net7.0\School.Data.AssemblyInfo.cs
+D:\A_Old_Material\CV_Project\L_CA\School\School.Data\obj\Debug\net7.0\School.Data.csproj.CoreCompileInputs.cache
+D:\A_Old_Material\CV_Project\L_CA\School\School.Data\obj\Debug\net7.0\School.Data.dll
+D:\A_Old_Material\CV_Project\L_CA\School\School.Data\obj\Debug\net7.0\refint\School.Data.dll
+D:\A_Old_Material\CV_Project\L_CA\School\School.Data\obj\Debug\net7.0\School.Data.pdb
+D:\A_Old_Material\CV_Project\L_CA\School\School.Data\obj\Debug\net7.0\ref\School.Data.dll

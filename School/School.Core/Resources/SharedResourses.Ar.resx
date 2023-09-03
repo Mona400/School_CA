@@ -147,6 +147,15 @@
   <data name="FaildToAddUser" xml:space="preserve">
     <value>حدث خطاء اثناء اضافه المستخدم</value>
   </data>
+  <data name="FailedToAddNewClaims" xml:space="preserve">
+    <value>حدث فشل ف اضافه المعلومات القديمه</value>
+  </data>
+  <data name="FailedToRemmoveOldClaims" xml:space="preserve">
+    <value>حدث فشل ف حذف المعلومات القديمه</value>
+  </data>
+  <data name="FailedToUpdateClaims" xml:space="preserve">
+    <value>حدث فشل ف تحديث المعلومات القديمه</value>
+  </data>
   <data name="IsExist" xml:space="preserve">
     <value>موجود بالفعل </value>
   </data>
@@ -209,6 +218,9 @@
   </data>
   <data name="UpdateFailed" xml:space="preserve">
     <value>حدث خطا اثناء عمليه تحديث البيانات</value>
+  </data>
+  <data name="UserIsNotFound" xml:space="preserve">
+    <value>المستخدم غير موجود</value>
   </data>
   <data name="UserName" xml:space="preserve">
     <value>اسم المستخدم</value>

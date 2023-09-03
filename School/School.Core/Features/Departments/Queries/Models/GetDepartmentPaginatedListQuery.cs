@@ -1,7 +1,7 @@
 ﻿using MediatR;
 using School.Core.Features.Departments.Queries.Results;
 using School.Core.Wrappers;
-using School.Data.Helpers;
+using School.Data.Enums;
 
 namespace School.Core.Features.Departments.Queries.Models
 {

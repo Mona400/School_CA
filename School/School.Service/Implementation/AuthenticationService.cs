@@ -3,6 +3,7 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
 using School.Data.Entities.Identity;
 using School.Data.Helpers;
+using School.Data.Results;
 using School.Infrastructure.Abstracties;
 using School.Service.Abstracts;
 using System.IdentityModel.Tokens.Jwt;
@@ -74,8 +75,10 @@ namespace School.Service.Implementation
             return Convert.ToBase64String(randomNumber);
 
         }
-        private List<Claim> GetClaims(User user, List<string> roles)
+        private async Task<List<Claim>> GetClaims(User user)
         {
+            var roles = await _userManager.GetRolesAsync(user);
+
             var claims = new List<Claim>()
             {
                 new Claim(ClaimTypes.Name,user.UserName),
@@ -83,12 +86,15 @@ namespace School.Service.Implementation
                 new Claim(ClaimTypes.Email,user.Email),
                 new Claim(nameof(UserClaimModel.Id), user.Id.ToString()),
                 new Claim(nameof(UserClaimModel.PhoneNumber), user.PhoneNumber),
-                new Claim(ClaimTypes.Role, "Admin"),
+                  new Claim(ClaimTypes.Role, "Admin"),
             };
             foreach (var role in roles)
             {
                 claims.Add(new Claim(ClaimTypes.Role, role));
             }
+            var userClaims = await _userManager.GetClaimsAsync(user);
+            claims.AddRange(userClaims);
+
             //new Claim(nameof(UserClaimModel.UserName), user.UserName),
             //    new Claim(nameof(UserClaimModel.Email), user.Email),
             //    new Claim(nameof(UserClaimModel.PhoneNumber), user.PhoneNumber),
@@ -99,8 +105,8 @@ namespace School.Service.Implementation
 
         private async Task<(JwtSecurityToken, string)> GenerateJWTToken(User user)
         {
-            var roles = await _userManager.GetRolesAsync(user);
-            var claims = GetClaims(user, roles.ToList());
+
+            var claims = await GetClaims(user);
             var jwtToken = new JwtSecurityToken(
                 _jwtSettings.Issure,
                 _jwtSettings.Audience,

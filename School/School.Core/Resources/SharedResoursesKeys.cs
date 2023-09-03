@@ -38,6 +38,10 @@
 
         public const string RoleNotExist = "RoleNotExist";
         public const string RoleIsUsed = "RoleIsUsed";
+        public const string UserIsNotFound = "UserIsNotFound";
+        public const string FailedToRemmoveOldClaims = "FailedToRemmoveOldClaims";
+        public const string FailedToAddNewClaims = "FailedToAddNewClaims";
+        public const string FailedToUpdateClaims = "FailedToUpdateClaims";
 
 
     }
